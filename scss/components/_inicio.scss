@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    height: 6rem;
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar li a{
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            padding: 7px 7px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .navbar a:hover {
+            color: goldenrod;
+           
+        }
+        .icono {
+            position: absolute;
+            right: 5%;
+            cursor: pointer;
+            display: none;  
+         }
+
+         #menu {
+            display: none;
+         }
+        
+    }
+
+    .header-index {
+        height: 75vh;
+        background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-pikachu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 42vh;
+    }
+    
+    .btn {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid cadetblue;
+        background-color: cadetblue;
+        border-radius: 3.5px;
+        width: 300px;
+        
+    }
+    
+    .btn-txt {
+        color: white;
+        padding: 8px;
+    }
+
+
+    }
+    // FALTA AGREGAR BOOSTRAP PARA EL NAVBAR RESPONSIVE 
+
+     // MAIN DEL INDEX
+    .main-content {
+        background-image: url(https://w0.peakpx.com/wallpaper/613/152/HD-wallpaper-pokemon-pokeball-pokemon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+
+        .galery-container {
+            height: 90vh;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image:url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-ceruledge.jpg); 
+        }
+
+        h1 {
+           
+            padding-top: 2rem;
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+        }
+        
+        span {
+            color: gold;
+        }
+        
+    .slider {
+        
+        padding-left: 12rem;
+        width: 95%;
+        height: auto;
+        margin: 10px auto 0;
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            padding-top: 2rem;
+            width: 200%;
+            gap: 10px;
+              
+         }
+    }
+
+     }
+
+     .btn {
+        padding: 5px;
+        
+        margin: 3rem;
+        margin-left: 42vw ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid cadetblue;
+        background-color: cadetblue;
+        border-radius: 3.5px;
+        width: 250px;
+
+
+        .btn-txt {
+            color: white;
+            padding: 8px;
+        }
+    }
+
+
+     .noticias-container {
+        margin-left: 34vw;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;  
+        width: 600px;
+
+        h2 {
+            padding-top: 3rem;
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+        }
+
+        .cards-noti {
+            padding: 2rem;
+            border: 8px solid #e4eeef;
+            border-radius: 50px;
+            background-color: #e4eeef;
+            margin: 2rem;
+        
+            .img-cartas {
+                margin-left: 4vw;
+                width: 70%;
+            }
+
+            p {
+                padding: 1rem;
+                font-size: 18px;
+                display: flex;
+                text-align: center;
+                color: black;
+                font-weight: 600;
+                justify-content: center;
+            }
+        }
+        .btn-2 {
+            margin: 1rem;
+            margin-left: 5vw ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid cadetblue;
+            background-color: cadetblue;
+            border-radius: 3.5px;
+            width: 250px;
+
+            .btn-txt {
+                color: white;
+                padding: 8px;
+            }
+        }
+    }
+// PIE DE MI PAGINA
+
+    .footer {
+        height: 80px;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+
+       
+        .header-logof {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .redes {
+            font-size: 23px;
+            cursor: pointer;
+
+            .tw {
+                padding: 5px;
+                color: white;
+              }
+              
+              .ig{
+                 padding: 5px;
+                 color: #FFFFFF;
+              }
+              .env {
+                 padding: 5px;
+                 color: #FFFFFF;
+              }
+              
+              .dis {
+                 padding: 5px;
+                 color: #FFFFFF;
+              }
+         }
+
+    
+        
+         
+    }
+    hr {
+        color: white;
+     }
+    
+     .derechos {
+        display: flex;
+        background-color: cadetblue;
+
+        p {
+            color: white;
+         }
+        
+     }

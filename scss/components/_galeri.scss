@@ -1,0 +1,24 @@
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 50px;
+   
+    .galeri {
+        display: flex;
+        align-items: center;
+        height: 20vh;
+        padding: 20px;
+        border:  5px solid rgb(177, 203, 204) ;
+        background-color: rgb(177, 203, 204) ;
+        border-radius: 8px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .galeri:hover {
+        transform: scale(1.1);
+        transition: .5s;
+     }
+}

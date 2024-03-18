@@ -1,0 +1,193 @@
+
+.new-main {
+    background-image: url(https://tcg.pokemon.com/assets/img/sv-expansions/temporal-forces/header/es-es/sv5-hero-3-large-up.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+.newsbasic {
+    
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 2px ;
+    width: 40%;
+    margin-left: 28.4%;
+   
+    .txt-sub {
+        color:goldenrod;
+        text-align:center;
+        padding: 20px;
+        font-weight: 470;
+    }
+    .new-txt {
+     padding: 30px;
+     width: 100%;
+     font-weight: 400;
+     font-size: 1.3rem;
+     text-align: justify;
+     color: white;
+    }
+    
+    .viñetas {
+        padding-left: 30px;
+        text-decoration: none;
+        font-weight: 550;
+        color: goldenrod;
+    }
+}
+
+}
+
+.new-main2 {
+    background-image: url(https://www.solofondos.com/wp-content/uploads/2016/01/Fondos-de-pantalla-de-Pokemon-XY-1024x561.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     
+
+    .newsbasic {
+        align-items: center;
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        border: 2px ;
+        width: 40%;
+        margin-left: 28.4%;
+       
+        .txt-sub {
+            color:goldenrod;
+            text-align:center;
+            padding: 20px;
+            font-weight: 470;
+        }
+        .new-txt {
+         padding: 30px;
+         width: 100%;
+         font-weight: 400;
+         font-size: 1.3rem;
+         text-align: justify;
+         color: white;
+
+    
+        }
+        .new-img {
+            height: 80%;
+            padding-left:35%;
+         }
+        
+        .viñetas {
+            padding-left: 30px;
+            color: cadetblue;
+            text-decoration: none;
+            font-weight: 550;
+            color: goldenrod;
+        }
+    }
+}
+
+.new-main3 {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/778/164/837/poke-balls-digital-art-balls-fantasy-art-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+.newsbasic {
+    
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 2px ;
+    width: 40%;
+    margin-left: 28.4%;
+
+    img {
+        
+        margin-left: 7%;
+        padding: 30px;
+    }
+   
+    .txt-sub {
+        color:goldenrod;
+        text-align:center;
+        padding: 20px;
+        font-weight: 470;
+    }
+    .new-txt {
+     padding: 30px;
+     width: 100%;
+     font-weight: 400;
+     font-size: 1.3rem;
+     text-align: justify;
+     color: white;
+    }
+    
+    .viñetas {
+        padding-left: 30px;
+        text-decoration: none;
+        font-weight: 550;
+        color: goldenrod;
+    }
+}
+}
+
+.flexnew {
+    background-image: url(https://tcg.pokemon.com/assets/img/sv-expansions/paldea-evolved/backgrounds/grey-pattern.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        color: goldenrod;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .container-flex {
+      padding: 5rem;
+
+      h3 {
+        color:goldenrod;
+        padding-top: 30px;
+        padding-bottom: 8px;
+        font-weight: 470;
+        font-size: 2rem;
+        text-align: start;
+        padding-left: 1rem;
+        
+    }
+    .txt-left {
+        color:goldenrod;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        font-weight: 470;
+        font-size: 2rem;
+        text-align: start;
+        padding-left:51%;
+    }
+    
+    }
+
+    .flexnew-img {
+       display: flex;
+
+        p {
+            
+            padding: 20px;
+            font-size: 1.4rem;
+            font-weight: 470;
+            text-align: start;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            padding: 5px;
+        }
+
+        
+
+        }
+        
+
+    
+    }

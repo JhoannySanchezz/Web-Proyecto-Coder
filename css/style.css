@@ -1,0 +1,662 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 0 5%;
+  height: 6rem;
+}
+.header .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar li a {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding: 7px 7px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.header .navbar a:hover {
+  color: goldenrod;
+}
+.header .icono {
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+}
+.header #menu {
+  display: none;
+}
+
+.header-index {
+  height: 75vh;
+  background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-pikachu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.header-index .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 42vh;
+}
+.header-index .btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid cadetblue;
+  background-color: cadetblue;
+  border-radius: 3.5px;
+  width: 300px;
+}
+.header-index .btn-txt {
+  color: white;
+  padding: 8px;
+}
+
+.main-content {
+  background-image: url(https://w0.peakpx.com/wallpaper/613/152/HD-wallpaper-pokemon-pokeball-pokemon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.main-content .galery-container {
+  height: 90vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-ceruledge.jpg);
+}
+.main-content h1 {
+  padding-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+.main-content span {
+  color: gold;
+}
+.main-content .slider {
+  padding-left: 12rem;
+  width: 95%;
+  height: auto;
+  margin: 10px auto 0;
+  overflow: hidden;
+}
+.main-content .slider ul {
+  display: flex;
+  padding-top: 2rem;
+  width: 200%;
+  gap: 10px;
+}
+
+.btn {
+  padding: 5px;
+  margin: 3rem;
+  margin-left: 42vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid cadetblue;
+  background-color: cadetblue;
+  border-radius: 3.5px;
+  width: 250px;
+}
+.btn .btn-txt {
+  color: white;
+  padding: 8px;
+}
+
+.noticias-container {
+  margin-left: 34vw;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 600px;
+}
+.noticias-container h2 {
+  padding-top: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+.noticias-container .cards-noti {
+  padding: 2rem;
+  border: 8px solid #e4eeef;
+  border-radius: 50px;
+  background-color: #e4eeef;
+  margin: 2rem;
+}
+.noticias-container .cards-noti .img-cartas {
+  margin-left: 4vw;
+  width: 70%;
+}
+.noticias-container .cards-noti p {
+  padding: 1rem;
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  justify-content: center;
+}
+.noticias-container .btn-2 {
+  margin: 1rem;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid cadetblue;
+  background-color: cadetblue;
+  border-radius: 3.5px;
+  width: 250px;
+}
+.noticias-container .btn-2 .btn-txt {
+  color: white;
+  padding: 8px;
+}
+
+.footer {
+  height: 80px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.footer .header-logof {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .redes {
+  font-size: 23px;
+  cursor: pointer;
+}
+.footer .redes .tw {
+  padding: 5px;
+  color: white;
+}
+.footer .redes .ig {
+  padding: 5px;
+  color: #FFFFFF;
+}
+.footer .redes .env {
+  padding: 5px;
+  color: #FFFFFF;
+}
+.footer .redes .dis {
+  padding: 5px;
+  color: #FFFFFF;
+}
+
+hr {
+  color: white;
+}
+
+.derechos {
+  display: flex;
+  background-color: cadetblue;
+}
+.derechos p {
+  color: white;
+}
+
+.noticias-content {
+  height: 30vh;
+  background-image: url(../images/noti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.noticias-content h1 {
+  text-align: center;
+  padding: 55px;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: 800;
+  color: goldenrod;
+}
+
+main {
+  background-color: #97afb7;
+}
+main h2 {
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+main .sub-galeri {
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 600;
+  padding: 20px;
+  padding-left: 40%;
+}
+main .content-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 100%;
+  padding: 50px;
+}
+main .content-cards .galeri-ep {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  padding: 20px;
+  border: 5px solid rgb(177, 203, 204);
+  background-color: rgb(177, 203, 204);
+  border-radius: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main .content-cards .galeri-ep img {
+  width: 50%;
+}
+main .galeri-ep:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+main .galeri-txt a {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 450;
+}
+main .galeri-txt a :hover {
+  color: goldenrod;
+}
+
+.gallery-cards {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/75/109/209/sunset-16-bit-pixel-art-pokemon-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery-cards .contenedor-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  padding: 8rem;
+}
+.gallery-cards .contenedor-gallery img {
+  width: 100%;
+}
+
+.content-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 100%;
+  padding: 50px;
+}
+.content-cards .galeri {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  padding: 20px;
+  border: 5px solid rgb(177, 203, 204);
+  background-color: rgb(177, 203, 204);
+  border-radius: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.content-cards .galeri:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.container-noti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 80%;
+  padding: 50px;
+  padding-left: 16rem;
+}
+.container-noti .Producto-txt {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: start;
+  padding: 20px;
+}
+.container-noti .Producto-txt a {
+  color: white;
+}
+.container-noti .Producto-txt a:hover {
+  color: goldenrod;
+}
+.container-noti .noticias-1 {
+  cursor: pointer;
+  background-color: rgb(177, 203, 204);
+  border: 5px;
+  border-radius: 16px;
+  transition: 0.5s;
+}
+.container-noti .noticias-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.container-noti .noticias-1 h3 {
+  color: white;
+  padding: 6%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container-noti h3:hover {
+  color: goldenrod;
+}
+.container-noti .noticias-1:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/peakpx.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.login .contenedor {
+  position: relative;
+  width: 400px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .contenedor h2 {
+  font-size: 2.3rem;
+  color: white;
+  text-align: center;
+}
+.login .input-contenedor {
+  position: relative;
+  margin: 30px 0;
+  width: 300px;
+  border-bottom: 2px solid white;
+}
+.login .input-contenedor i {
+  position: absolute;
+  color: white;
+  font-size: 1.6rem;
+  top: 19px;
+  right: 8px;
+}
+.login .input-contenedor input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: -35px 0 5px;
+  color: white;
+}
+.login .input-contenedor label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.6s;
+  font-weight: 600;
+}
+.login input:focus ~ label,
+.login input:valid ~ label {
+  top: -5px;
+}
+
+.olvidar {
+  padding-bottom: 20px;
+  margin: -15px 0 15px;
+  font-size: 0.9rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.olvidar label input {
+  margin: 3px;
+}
+.olvidar label a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.9em;
+}
+.olvidar label a :hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: white;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+.btn-login :hover {
+  opacity: 0.9;
+}
+
+.registrar {
+  padding-bottom: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+.registrar p {
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.registrar p a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.registrar p a :hover {
+  text-decoration: underline;
+}
+
+.new-main {
+  background-image: url(https://tcg.pokemon.com/assets/img/sv-expansions/temporal-forces/header/es-es/sv5-hero-3-large-up.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.new-main .newsbasic {
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 2px;
+  width: 40%;
+  margin-left: 28.4%;
+}
+.new-main .newsbasic .txt-sub {
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+  font-weight: 470;
+}
+.new-main .newsbasic .new-txt {
+  padding: 30px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: white;
+}
+.new-main .newsbasic .viñetas {
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: 550;
+  color: goldenrod;
+}
+
+.new-main2 {
+  background-image: url(https://www.solofondos.com/wp-content/uploads/2016/01/Fondos-de-pantalla-de-Pokemon-XY-1024x561.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.new-main2 .newsbasic {
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 2px;
+  width: 40%;
+  margin-left: 28.4%;
+}
+.new-main2 .newsbasic .txt-sub {
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+  font-weight: 470;
+}
+.new-main2 .newsbasic .new-txt {
+  padding: 30px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: white;
+}
+.new-main2 .newsbasic .new-img {
+  height: 80%;
+  padding-left: 35%;
+}
+.new-main2 .newsbasic .viñetas {
+  padding-left: 30px;
+  color: cadetblue;
+  text-decoration: none;
+  font-weight: 550;
+  color: goldenrod;
+}
+
+.new-main3 {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/778/164/837/poke-balls-digital-art-balls-fantasy-art-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.new-main3 .newsbasic {
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 2px;
+  width: 40%;
+  margin-left: 28.4%;
+}
+.new-main3 .newsbasic img {
+  margin-left: 7%;
+  padding: 30px;
+}
+.new-main3 .newsbasic .txt-sub {
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+  font-weight: 470;
+}
+.new-main3 .newsbasic .new-txt {
+  padding: 30px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: white;
+}
+.new-main3 .newsbasic .viñetas {
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: 550;
+  color: goldenrod;
+}
+
+.flexnew {
+  background-image: url(https://tcg.pokemon.com/assets/img/sv-expansions/paldea-evolved/backgrounds/grey-pattern.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.flexnew h2 {
+  color: goldenrod;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.flexnew .container-flex {
+  padding: 5rem;
+}
+.flexnew .container-flex h3 {
+  color: goldenrod;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  font-weight: 470;
+  font-size: 2rem;
+  text-align: start;
+  padding-left: 1rem;
+}
+.flexnew .container-flex .txt-left {
+  color: goldenrod;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  font-weight: 470;
+  font-size: 2rem;
+  text-align: start;
+  padding-left: 51%;
+}
+.flexnew .flexnew-img {
+  display: flex;
+}
+.flexnew .flexnew-img p {
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: 470;
+  text-align: start;
+}
+.flexnew .flexnew-img img {
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
