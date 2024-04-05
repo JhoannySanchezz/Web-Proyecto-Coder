@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    .nav-link:hover {
+        color: gold;
+    }
+    
+    .nav-link {
+            font-family: 'Poppins', sans-serif;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            padding: 7px 7px;
+            border-radius: 25px;       
+    }
+   .dropdown-menu {
+    background-color: cadetblue;
+   }
+    .dropdown-item{
+      color: #FFFFFF;
+            
+    }
+    .dropdown-item:hover {
+      color: gold;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      background-color: cadetblue;
+    }
+}
+.header {
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    height: 6rem;
+
+}
+
+    .header-index {
+        height: 75vh;
+        background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/iron-crown-large-up.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 42vh;
+    }
+    
+    .botones {
+        margin-top: 20px;
+        margin-left: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid cadetblue;
+        background-color: cadetblue;
+        border-radius: 3.5px;
+        width: 300px;
+
+        @media (max-width:425px) {
+            margin-left: 3rem;
+        }
+
+        @media (min-width:1440px) and (max-width:1720px) {
+      
+            margin-left: 35rem !important;
+            
+          }
+        
+    }
+    
+    .botones-txt {
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+
+    }
+  
+
+     // MAIN DEL INDEX
+    .main-content {
+        background-image: url(https://w0.peakpx.com/wallpaper/613/152/HD-wallpaper-pokemon-pokeball-pokemon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+
+        .galery-container {
+            height: 90vh;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image:url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-ceruledge.jpg); 
+        }
+
+        h1 {
+           
+            padding-top: 2rem;
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+        }
+        
+        span {
+            color: gold;
+        }
+        
+    .slider {
+        
+        padding-left: 12rem;
+        width: 95%;
+        height: auto;
+        margin: 10px auto 0;
+        overflow: hidden;
+
+        
+        @media (max-width:425px) {
+           padding-left: 0;
+        }
+
+        @media (min-width:1440px) and (max-width:1720px) {
+            width: 100%;
+            padding-left: 0 !important;
+            
+          }
+
+        ul {
+            display: flex;
+            padding-top: 2rem;
+            width: 200%;
+            gap: 10px;
+            
+        @media (max-width:425px)  {
+                padding: 20px;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+        
+                img {
+                    width: 90%;
+                }
+              }
+           
+         }
+              
+         }
+    }
+
+     
+     .botones {
+        padding: 5px;  
+        margin: 3rem;
+        margin-left: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid cadetblue;
+        background-color: cadetblue;
+        border-radius: 3.5px;
+        width: 250px;
+
+        
+        @media (max-width:425px) {
+            margin-left: 5rem;
+        }
+
+
+        .botones-txt {
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+        }
+    }
+
+
+     .noticias-container {
+        margin-left: 34vw;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;  
+        width: 600px;
+
+        
+        @media (max-width:425px) {
+            padding: 0px;
+            margin-left: 0.7rem;
+            width: 100%;
+        }
+
+        h2 {
+            padding-top: 3rem;
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+        }
+
+        .cards-noti {
+            padding: 2rem;
+            border: 8px solid #e4eeef;
+            border-radius: 50px;
+            background-color: #e4eeef;
+            margin: 2rem;
+        
+            .img-cartas {
+                margin-left: 4vw;
+                width: 70%;
+
+                
+        @media (max-width:425px) {
+            margin-left: 0px;
+            width: 100%;
+        }
+            }
+
+            p {
+                padding: 1rem;
+                font-size: 18px;
+                display: flex;
+                text-align: center;
+                color: black;
+                font-weight: 600;
+                justify-content: center;
+
+                
+            }
+        }
+        .botones-2 {
+            margin: 1rem;
+            margin-left: 5vw ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid cadetblue;
+            background-color: cadetblue;
+            border-radius: 3.5px;
+            width: 250px;
+
+            
+        @media (max-width:425px) {
+            margin-left: 0.3rem;
+        }
+
+            .botones-txt {
+                color: white;
+                padding: 8px;
+                text-decoration: none;
+            }
+        }
+    }
+// PIE DE MI PAGINA
+
+    .footer {
+        
+        height: 80px;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+
+       
+        .header-logof {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .redes {
+            padding-top: 4%;
+            font-size: 23px;
+            cursor: pointer;
+
+            .tw {
+                padding: 5px;
+                color: white;
+              }
+              
+              .ig{
+                 padding: 5px;
+                 color: #FFFFFF;
+              }
+              .env {
+                 padding: 5px;
+                 color: #FFFFFF;
+              }
+              
+              .dis {
+                 padding: 5px;
+                 color: #FFFFFF;
+              }
+         }
+        }
+        
+
+     .derechos {
+        padding-top: 10px;
+        display: flex;
+        background-color: cadetblue;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        padding-left: 10px;
+
+        p {
+            color: white;
+         }
+        
+     }
+    
