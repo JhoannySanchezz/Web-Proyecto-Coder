@@ -11,6 +11,31 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar .nav-link:hover {
+  color: gold;
+}
+.navbar .nav-link {
+  font-family: "Poppins", sans-serif;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding: 7px 7px;
+  border-radius: 25px;
+}
+.navbar .dropdown-menu {
+  background-color: cadetblue;
+}
+.navbar .dropdown-item {
+  color: #FFFFFF;
+}
+.navbar .dropdown-item:hover {
+  color: gold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: cadetblue;
+}
+
 .header {
   width: 100%;
   background-color: cadetblue;
@@ -22,36 +47,10 @@ body {
   padding: 0 5%;
   height: 6rem;
 }
-.header .navbar ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .navbar li a {
-  margin: 0 10px;
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-  padding: 7px 7px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-.header .navbar a:hover {
-  color: goldenrod;
-}
-.header .icono {
-  position: absolute;
-  right: 5%;
-  cursor: pointer;
-  display: none;
-}
-.header #menu {
-  display: none;
-}
 
 .header-index {
   height: 75vh;
-  background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-pikachu.jpg);
+  background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/iron-crown-large-up.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -62,8 +61,9 @@ body {
   align-items: center;
   padding-top: 42vh;
 }
-.header-index .btn {
+.header-index .botones {
   margin-top: 20px;
+  margin-left: 42%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,9 +72,20 @@ body {
   border-radius: 3.5px;
   width: 300px;
 }
-.header-index .btn-txt {
+@media (max-width: 425px) {
+  .header-index .botones {
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1720px) {
+  .header-index .botones {
+    margin-left: 35rem !important;
+  }
+}
+.header-index .botones-txt {
   color: white;
   padding: 8px;
+  text-decoration: none;
 }
 
 .main-content {
@@ -106,17 +117,38 @@ body {
   margin: 10px auto 0;
   overflow: hidden;
 }
+@media (max-width: 425px) {
+  .main-content .slider {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1720px) {
+  .main-content .slider {
+    width: 100%;
+    padding-left: 0 !important;
+  }
+}
 .main-content .slider ul {
   display: flex;
   padding-top: 2rem;
   width: 200%;
   gap: 10px;
 }
+@media (max-width: 425px) {
+  .main-content .slider ul {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .main-content .slider ul img {
+    width: 90%;
+  }
+}
 
-.btn {
+.botones {
   padding: 5px;
   margin: 3rem;
-  margin-left: 42vw;
+  margin-left: 42%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,9 +157,15 @@ body {
   border-radius: 3.5px;
   width: 250px;
 }
-.btn .btn-txt {
+@media (max-width: 425px) {
+  .botones {
+    margin-left: 5rem;
+  }
+}
+.botones .botones-txt {
   color: white;
   padding: 8px;
+  text-decoration: none;
 }
 
 .noticias-container {
@@ -136,6 +174,13 @@ body {
   align-items: center;
   height: 75vh;
   width: 600px;
+}
+@media (max-width: 425px) {
+  .noticias-container {
+    padding: 0px;
+    margin-left: 0.7rem;
+    width: 100%;
+  }
 }
 .noticias-container h2 {
   padding-top: 3rem;
@@ -154,6 +199,12 @@ body {
   margin-left: 4vw;
   width: 70%;
 }
+@media (max-width: 425px) {
+  .noticias-container .cards-noti .img-cartas {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
 .noticias-container .cards-noti p {
   padding: 1rem;
   font-size: 18px;
@@ -163,7 +214,7 @@ body {
   font-weight: 600;
   justify-content: center;
 }
-.noticias-container .btn-2 {
+.noticias-container .botones-2 {
   margin: 1rem;
   margin-left: 5vw;
   display: flex;
@@ -174,9 +225,15 @@ body {
   border-radius: 3.5px;
   width: 250px;
 }
-.noticias-container .btn-2 .btn-txt {
+@media (max-width: 425px) {
+  .noticias-container .botones-2 {
+    margin-left: 0.3rem;
+  }
+}
+.noticias-container .botones-2 .botones-txt {
   color: white;
   padding: 8px;
+  text-decoration: none;
 }
 
 .footer {
@@ -193,6 +250,7 @@ body {
   gap: 10px;
 }
 .footer .redes {
+  padding-top: 4%;
   font-size: 23px;
   cursor: pointer;
 }
@@ -213,13 +271,13 @@ body {
   color: #FFFFFF;
 }
 
-hr {
-  color: white;
-}
-
 .derechos {
+  padding-top: 10px;
   display: flex;
   background-color: cadetblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding-left: 10px;
 }
 .derechos p {
   color: white;
@@ -255,7 +313,7 @@ main .sub-galeri {
   font-size: 35px;
   font-weight: 600;
   padding: 20px;
-  padding-left: 40%;
+  padding-left: 42%;
 }
 main .content-cards {
   display: grid;
@@ -283,9 +341,12 @@ main .galeri-ep:hover {
   transition: 0.5s;
 }
 main .galeri-txt a {
+  margin-left: 5px;
+  font-family: "Poppins", sans-serif;
   color: #FFFFFF;
   font-size: 1.3rem;
   font-weight: 450;
+  text-decoration: none;
 }
 main .galeri-txt a :hover {
   color: goldenrod;
@@ -303,6 +364,26 @@ main .galeri-txt a :hover {
   gap: 30px;
   padding: 8rem;
 }
+@media (max-width: 425px) {
+  .gallery-cards .contenedor-gallery {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .gallery-cards .contenedor-gallery img {
+    width: 80%;
+  }
+}
+@media (max-width: 750px) {
+  .gallery-cards .contenedor-gallery {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .gallery-cards .contenedor-gallery img {
+    width: 90%;
+  }
+}
 .gallery-cards .contenedor-gallery img {
   width: 100%;
 }
@@ -313,6 +394,35 @@ main .galeri-txt a :hover {
   gap: 50px;
   width: 100%;
   padding: 50px;
+}
+@media (max-width: 425px) {
+  .content-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .content-cards .galeri {
+    padding: 20px;
+    display: flex;
+    height: 100% !important;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .content-cards .galeri img {
+    order: 1;
+    flex: 1;
+    width: 100%;
+  }
+  .content-cards .galeri .galeri-txt {
+    order: 2;
+    flex: 1;
+  }
+  .content-cards .galeri .galeri-txt a {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
 }
 .content-cards .galeri {
   display: flex;
@@ -338,6 +448,19 @@ main .galeri-txt a :hover {
   padding: 50px;
   padding-left: 16rem;
 }
+@media (max-width: 425px) {
+  .container-noti {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 30px !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1720px) {
+  .container-noti {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+}
 .container-noti .Producto-txt {
   font-size: 1.3rem;
   font-weight: 500;
@@ -346,6 +469,8 @@ main .galeri-txt a :hover {
 }
 .container-noti .Producto-txt a {
   color: white;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 .container-noti .Producto-txt a:hover {
   color: goldenrod;
@@ -498,46 +623,17 @@ main .galeri-txt a :hover {
   text-decoration: underline;
 }
 
-.new-main {
-  background-image: url(https://tcg.pokemon.com/assets/img/sv-expansions/temporal-forces/header/es-es/sv5-hero-3-large-up.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.new-main .newsbasic {
-  align-items: center;
-  backdrop-filter: blur(15px);
-  border-radius: 15px;
-  border: 2px;
-  width: 40%;
-  margin-left: 28.4%;
-}
-.new-main .newsbasic .txt-sub {
-  color: goldenrod;
-  text-align: center;
-  padding: 20px;
-  font-weight: 470;
-}
-.new-main .newsbasic .new-txt {
-  padding: 30px;
-  width: 100%;
-  font-weight: 400;
-  font-size: 1.3rem;
-  text-align: justify;
-  color: white;
-}
-.new-main .newsbasic .viñetas {
-  padding-left: 30px;
-  text-decoration: none;
-  font-weight: 550;
-  color: goldenrod;
-}
-
 .new-main2 {
   background-image: url(https://www.solofondos.com/wp-content/uploads/2016/01/Fondos-de-pantalla-de-Pokemon-XY-1024x561.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: auto;
+}
+@media (max-width: 425px) {
+  .new-main2 {
+    height: auto;
+  }
 }
 .new-main2 .newsbasic {
   align-items: center;
@@ -547,13 +643,28 @@ main .galeri-txt a :hover {
   width: 40%;
   margin-left: 28.4%;
 }
+@media (max-width: 425px) {
+  .new-main2 .newsbasic {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+}
 .new-main2 .newsbasic .txt-sub {
+  font-family: "Poppins", sans-serif;
   color: goldenrod;
   text-align: center;
   padding: 20px;
   font-weight: 470;
 }
+@media (max-width: 425px) {
+  .new-main2 .newsbasic .txt-sub {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
 .new-main2 .newsbasic .new-txt {
+  font-family: "Poppins", sans-serif;
   padding: 30px;
   width: 100%;
   font-weight: 400;
@@ -561,9 +672,20 @@ main .galeri-txt a :hover {
   text-align: justify;
   color: white;
 }
+@media (max-width: 425px) {
+  .new-main2 .newsbasic .new-txt {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
 .new-main2 .newsbasic .new-img {
   height: 80%;
   padding-left: 35%;
+}
+@media (max-width: 425px) {
+  .new-main2 .newsbasic .new-img {
+    padding-left: 45px;
+  }
 }
 .new-main2 .newsbasic .viñetas {
   padding-left: 30px;
@@ -572,12 +694,23 @@ main .galeri-txt a :hover {
   font-weight: 550;
   color: goldenrod;
 }
+@media (max-width: 425px) {
+  .new-main2 .newsbasic .viñetas {
+    padding-left: 10px;
+  }
+}
 
 .new-main3 {
   background-image: url(https://p4.wallpaperbetter.com/wallpaper/778/164/837/poke-balls-digital-art-balls-fantasy-art-wallpaper-preview.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: auto;
+}
+@media (max-width: 425px) {
+  .new-main3 {
+    height: auto;
+  }
 }
 .new-main3 .newsbasic {
   align-items: center;
@@ -587,17 +720,38 @@ main .galeri-txt a :hover {
   width: 40%;
   margin-left: 28.4%;
 }
+@media (max-width: 425px) {
+  .new-main3 .newsbasic {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+}
 .new-main3 .newsbasic img {
   margin-left: 7%;
   padding: 30px;
 }
+@media (max-width: 425px) {
+  .new-main3 .newsbasic img {
+    margin: 0;
+    width: 100%;
+  }
+}
 .new-main3 .newsbasic .txt-sub {
+  font-family: "Poppins", sans-serif;
   color: goldenrod;
   text-align: center;
   padding: 20px;
   font-weight: 470;
 }
+@media (max-width: 425px) {
+  .new-main3 .newsbasic .txt-sub {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
 .new-main3 .newsbasic .new-txt {
+  font-family: "Poppins", sans-serif;
   padding: 30px;
   width: 100%;
   font-weight: 400;
@@ -605,11 +759,22 @@ main .galeri-txt a :hover {
   text-align: justify;
   color: white;
 }
+@media (max-width: 425px) {
+  .new-main3 .newsbasic .new-txt {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
 .new-main3 .newsbasic .viñetas {
   padding-left: 30px;
   text-decoration: none;
   font-weight: 550;
   color: goldenrod;
+}
+@media (max-width: 425px) {
+  .new-main3 .newsbasic .viñetas {
+    padding-left: 10px;
+  }
 }
 
 .flexnew {
@@ -623,10 +788,267 @@ main .galeri-txt a :hover {
   font-size: 3rem;
   font-weight: 800;
 }
+@media screen and (max-width: 425px) {
+  .flexnew h2 {
+    font-size: 30px !important;
+  }
+}
+.flexnew .container-flex {
+  padding: 5rem;
+}
+@media screen and (max-width: 425px) {
+  .flexnew .container-flex {
+    padding: 0px !important;
+  }
+}
+.flexnew .container-flex h3 {
+  font-family: "Poppins", sans-serif;
+  color: goldenrod;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  font-weight: 470;
+  font-size: 2rem;
+  text-align: start;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 425px) {
+  .flexnew .container-flex h3 {
+    font-size: 28px !important;
+    text-align: justify !important;
+    padding: 18px !important;
+  }
+}
+.flexnew .container-flex .txt-left {
+  font-family: "Poppins", sans-serif;
+  color: goldenrod;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  font-weight: 470;
+  font-size: 2rem;
+  text-align: start;
+  padding-left: 51%;
+}
+@media screen and (max-width: 425px) {
+  .flexnew .container-flex .txt-left {
+    font-size: 28px !important;
+    text-align: justify !important;
+    padding: 18px !important;
+  }
+}
+.flexnew .flexnew-img {
+  display: flex;
+}
+.flexnew .flexnew-img p {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: 470;
+  text-align: justify;
+}
+@media screen and (max-width: 425px) {
+  .flexnew .flexnew-img p {
+    font-size: 18px;
+  }
+}
+.flexnew .flexnew-img img {
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+}
+@media screen and (max-width: 425px) {
+  .flexnew .flexnew-img img {
+    display: none !important;
+  }
+}
+
+.new-main {
+  background-image: url(https://wallpapercave.com/wp/wp12488613.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+@media (max-width: 425px) {
+  .new-main {
+    height: auto;
+  }
+}
+.new-main .newsbasic {
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 40%;
+  margin-left: 28.4%;
+  padding: 20px;
+}
+@media (max-width: 425px) {
+  .new-main .newsbasic {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+}
+.new-main .newsbasic .txt-sub {
+  font-family: "Poppins", sans-serif;
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+  font-weight: 470;
+}
+@media (max-width: 425px) {
+  .new-main .newsbasic .txt-sub {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+.new-main .newsbasic .new-txt {
+  font-family: "Poppins", sans-serif;
+  padding: 30px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: white;
+}
+@media (max-width: 425px) {
+  .new-main .newsbasic .new-txt {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+.new-main .newsbasic .viñetas {
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: 550;
+  color: goldenrod;
+}
+@media (max-width: 425px) {
+  .new-main .newsbasic .viñetas {
+    padding-left: 10px;
+  }
+}
+.new-main .newsbasic .viñetas li {
+  font-size: 1rem;
+}
+@media (max-width: 425px) {
+  .new-main .newsbasic .viñetas li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .noticias-content h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 40px;
+  }
+  main h2 {
+    font-size: 30px;
+  }
+  main .sub-galeri {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+  }
+  main .content-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  main .content-cards .galeri-ep {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  main .content-cards .galeri-ep img {
+    order: 1;
+    flex: 1;
+    width: 100%;
+  }
+  main .content-cards .galeri-txt {
+    order: 2;
+    flex: 1;
+  }
+  main .content-cards .galeri-txt a {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .noticias-content h1 {
+    text-align: center;
+    padding: 55px;
+    line-height: 1.5;
+    font-size: 3rem;
+    font-weight: 800;
+    color: goldenrod;
+  }
+  main {
+    background-color: #97afb7;
+  }
+  main h2 {
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+  }
+  main .sub-galeri {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px;
+    padding-left: 42%;
+  }
+  main .content-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 50px;
+  }
+  main .content-cards .galeri-ep {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    padding: 20px;
+    border: 5px solid rgb(177, 203, 204);
+    background-color: rgb(177, 203, 204);
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  main .content-cards .galeri-ep img {
+    width: 50%;
+  }
+  main .galeri-ep:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  main .galeri-txt a {
+    margin-left: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 450;
+    text-decoration: none;
+  }
+  main .galeri-txt a :hover {
+    color: goldenrod;
+  }
+}
+.flexnew h2 {
+  color: goldenrod;
+  font-size: 3rem;
+  font-weight: 800;
+}
 .flexnew .container-flex {
   padding: 5rem;
 }
 .flexnew .container-flex h3 {
+  font-family: "Poppins", sans-serif;
   color: goldenrod;
   padding-top: 30px;
   padding-bottom: 8px;
@@ -636,6 +1058,7 @@ main .galeri-txt a :hover {
   padding-left: 1rem;
 }
 .flexnew .container-flex .txt-left {
+  font-family: "Poppins", sans-serif;
   color: goldenrod;
   padding-top: 20px;
   padding-bottom: 8px;
@@ -648,15 +1071,40 @@ main .galeri-txt a :hover {
   display: flex;
 }
 .flexnew .flexnew-img p {
+  font-family: "Poppins", sans-serif;
   padding: 20px;
   font-size: 1.4rem;
   font-weight: 470;
-  text-align: start;
+  text-align: justify;
 }
 .flexnew .flexnew-img img {
   height: 400px;
   width: 400px;
   padding: 5px;
+}
+
+.container-noti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: 80%;
+  padding: 50px;
+  padding-left: 16rem;
+}
+.container-noti .new-main .newsbasic {
+  align-items: center;
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  border: 2px;
+  width: 40%;
+  margin-left: 28.4%;
+}
+.container-noti .new-main .newsbasic .txt-sub {
+  font-family: "Poppins", sans-serif;
+  color: goldenrod;
+  text-align: center;
+  padding: 20px;
+  font-weight: 470;
 }
 
 /*# sourceMappingURL=style.css.map */

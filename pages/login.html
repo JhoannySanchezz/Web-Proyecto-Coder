@@ -19,32 +19,57 @@
    
     <title>Login</title>
 
+       <!-- bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
     
-<div class="header">
-  <a href="../index.html">
-    <img src="https://tcg.pokemon.com/assets/img/global/logos/es-es/tcg-logo.png" class="logo" alt="logo de pokemon">
-  </a>
-
-    <div class="container">
-        <input type="checkbox" id="menu">
-        <label for="menu" class="icono">
-          <img src="../images/menu1.png" id="menu-icon" alt="imagen barra de menu" >
-          <img src="../images/x.png" id="close-icon" alt="imagen barra de menu" width="50%">
-        </label>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: cadetblue;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="https://tcg.pokemon.com/assets/img/global/logos/es-es/tcg-logo.png" class="logo" alt="logo de pokemon">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Expansiones
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="expanciones.html">Escarlata y Púrpura</a></li>
+              <li><a class="dropdown-item" href="expanciones.html">Espada y Escudo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Galeria de Cartas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cartas.html">Escarlata y Púrpura</a></li>
+              <li><a class="dropdown-item" href="cartas.html">Espada y Escudo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          
+        </ul>
       </div>
-
-    <nav class="navbar">
-          <ul>
-            <li><a href="../index.html" class="nav-links">Inicio</a></li>
-            <li><a href="../pages/expanciones.html" class="nav-links">Expansiones</a></li>
-            <li><a href="../pages/cartas.html" class="nav-links">Cartas</a></li>
-            <li><a href="../pages/noticias.html" class="nav-links">Noticias</a></li>
-            <li><a href="../pages/login.html" class="nav-links">Login</a></li>
-          </ul>
-    </nav>
-</div>
+    </div>
+  </nav>
+  
 
 <section class="login">
     <div class="contenedor">
@@ -85,44 +110,50 @@
     </div>
 </section>
 
+
 <footer class="footer-container">
-    <div class="footer">
+  <div class="footer">
+
+     <div class="header-logof">
+       <img src="https://tcg.pokemon.com/assets/img/global/logos/es-es/tcg-logo.png" class="logof" alt="logo de pokemon">
+    </div>
+
+    <div class="redes">
   
-       <div class="header-logof">
-         <img src="https://tcg.pokemon.com/assets/img/global/logos/es-es/tcg-logo.png" class="logof" alt="logo de pokemon">
-      </div>
-  
-      <div class="redes">
+      <a href="https://twitter.com/" target="_blank" class="tw-link">
+        <span class="tw"><i class="fa-brands fa-x-twitter"></i></span>
+       </a>
+
+       <a href="https://www.instagram.com/" target="_blank" class="ig-link">
+        <span class="ig"><i class="fa-brands fa-instagram"></i></span>
+       </a>
+
+       <a href="https://mail.google.com/" target="_blank" class="env-link">
+        <span class="env"><i class="fa-regular fa-envelope"></i></span>
+       </a>
+
+       <a href="https://discord.com/" target="_blank" class="dis-link">
+        <span class="dis"><i class="fa-brands fa-discord"></i></span>
+       </a>
+
+       </div>
+       
+
     
-        <a href="https://twitter.com/" target="_blank" class="tw-link">
-          <span class="tw"><i class="fa-brands fa-x-twitter"></i></span>
-         </a>
-  
-         <a href="https://www.instagram.com/" target="_blank" class="ig-link">
-          <span class="ig"><i class="fa-brands fa-instagram"></i></span>
-         </a>
-  
-         <a href="https://mail.google.com/" target="_blank" class="env-link">
-          <span class="env"><i class="fa-regular fa-envelope"></i></span>
-         </a>
-  
-         <a href="https://discord.com/" target="_blank" class="dis-link">
-          <span class="dis"><i class="fa-brands fa-discord"></i></span>
-         </a>
-  
-         </div>
-         
-   </div>
-  
-   <hr>
-   <div class="derechos">
-     <p>Copyright©2024. All right reserved</p>
-   </div>
-  
-  
-  
-  </footer>
-  
-    
+ </div>
+
+ 
+ <div class="derechos">
+   <p>Copyright©2024. All right reserved</p>
+ </div>
+
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
+

@@ -30,7 +30,7 @@ main{
         font-size: 35px;
         font-weight: 600;
         padding: 20px;
-        padding-left: 40%;
+        padding-left: 42%;
     }
 
     .content-cards {
@@ -51,7 +51,7 @@ main{
         transition: .5s;
         cursor: pointer; 
       }
-
+        
         .galeri-ep img {
             width: 50%;
         }
@@ -65,13 +65,13 @@ main{
    
 
     .galeri-txt a {
+        margin-left: 5px;
+        font-family: 'Poppins', sans-serif;
         color: #FFFFFF;
         font-size: 1.3rem;
         font-weight: 450;
-       
-       
-    
-      
+        text-decoration: none;
+
         :hover {
             color: goldenrod;
         }
@@ -90,6 +90,28 @@ main{
     grid-template-columns:repeat(6,1fr);
     gap: 30px;
     padding: 8rem;
+
+    
+    @media (max-width: 425px) {
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+
+        img {
+            width: 80%;
+        }
+      }
+
+      
+    @media (max-width: 750px) {
+        padding: 20px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+
+        img {
+            width: 90%;
+        }
+      }
      
     img {
         width: 100%;
@@ -100,3 +122,4 @@ main{
     }
 
 }
+

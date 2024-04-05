@@ -8,6 +8,35 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.navbar {
+    .nav-link:hover {
+        color: gold;
+    }
+    
+    .nav-link {
+            font-family: 'Poppins', sans-serif;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+            padding: 7px 7px;
+            border-radius: 25px;       
+    }
+   .dropdown-menu {
+    background-color: cadetblue;
+   }
+    .dropdown-item{
+      color: #FFFFFF;
+            
+    }
+    .dropdown-item:hover {
+      color: gold;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      background-color: cadetblue;
+    }
+}
 .header {
     width: 100%;
     background-color: cadetblue;
@@ -19,42 +48,11 @@ body {
     padding: 0 5%;
     height: 6rem;
 
-        .navbar ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .navbar li a{
-            margin: 0 10px;
-            font-size: 18px;
-            font-weight: 400;
-            color: white;
-            padding: 7px 7px;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-
-        .navbar a:hover {
-            color: goldenrod;
-           
-        }
-        .icono {
-            position: absolute;
-            right: 5%;
-            cursor: pointer;
-            display: none;  
-         }
-
-         #menu {
-            display: none;
-         }
-        
-    }
+}
 
     .header-index {
         height: 75vh;
-        background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/feature-bg-shiny-pikachu.jpg);
+        background-image: url(https://tcg.pokemon.com/assets/img/home/featured-switcher/iron-crown-large-up.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center ;
@@ -66,8 +64,9 @@ body {
         padding-top: 42vh;
     }
     
-    .btn {
+    .botones {
         margin-top: 20px;
+        margin-left: 42%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -75,17 +74,28 @@ body {
         background-color: cadetblue;
         border-radius: 3.5px;
         width: 300px;
+
+        @media (max-width:425px) {
+            margin-left: 3rem;
+        }
+
+        @media (min-width:1440px) and (max-width:1720px) {
+      
+            margin-left: 35rem !important;
+            
+          }
         
     }
     
-    .btn-txt {
+    .botones-txt {
         color: white;
         padding: 8px;
+        text-decoration: none;
     }
 
 
     }
-    // FALTA AGREGAR BOOSTRAP PARA EL NAVBAR RESPONSIVE 
+  
 
      // MAIN DEL INDEX
     .main-content {
@@ -122,22 +132,43 @@ body {
         margin: 10px auto 0;
         overflow: hidden;
 
+        
+        @media (max-width:425px) {
+           padding-left: 0;
+        }
+
+        @media (min-width:1440px) and (max-width:1720px) {
+            width: 100%;
+            padding-left: 0 !important;
+            
+          }
+
         ul {
             display: flex;
             padding-top: 2rem;
             width: 200%;
             gap: 10px;
+            
+        @media (max-width:425px)  {
+                padding: 20px;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+        
+                img {
+                    width: 90%;
+                }
+              }
+           
+         }
               
          }
     }
 
-     }
-
-     .btn {
-        padding: 5px;
-        
+     
+     .botones {
+        padding: 5px;  
         margin: 3rem;
-        margin-left: 42vw ;
+        margin-left: 42%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,10 +177,16 @@ body {
         border-radius: 3.5px;
         width: 250px;
 
+        
+        @media (max-width:425px) {
+            margin-left: 5rem;
+        }
 
-        .btn-txt {
+
+        .botones-txt {
             color: white;
             padding: 8px;
+            text-decoration: none;
         }
     }
 
@@ -160,6 +197,13 @@ body {
         align-items: center;
         height: 75vh;  
         width: 600px;
+
+        
+        @media (max-width:425px) {
+            padding: 0px;
+            margin-left: 0.7rem;
+            width: 100%;
+        }
 
         h2 {
             padding-top: 3rem;
@@ -178,6 +222,12 @@ body {
             .img-cartas {
                 margin-left: 4vw;
                 width: 70%;
+
+                
+        @media (max-width:425px) {
+            margin-left: 0px;
+            width: 100%;
+        }
             }
 
             p {
@@ -188,9 +238,11 @@ body {
                 color: black;
                 font-weight: 600;
                 justify-content: center;
+
+                
             }
         }
-        .btn-2 {
+        .botones-2 {
             margin: 1rem;
             margin-left: 5vw ;
             display: flex;
@@ -201,15 +253,22 @@ body {
             border-radius: 3.5px;
             width: 250px;
 
-            .btn-txt {
+            
+        @media (max-width:425px) {
+            margin-left: 0.3rem;
+        }
+
+            .botones-txt {
                 color: white;
                 padding: 8px;
+                text-decoration: none;
             }
         }
     }
 // PIE DE MI PAGINA
 
     .footer {
+        
         height: 80px;
         background-color: cadetblue;
         display: flex;
@@ -225,6 +284,7 @@ body {
         }
 
         .redes {
+            padding-top: 4%;
             font-size: 23px;
             cursor: pointer;
 
@@ -247,21 +307,20 @@ body {
                  color: #FFFFFF;
               }
          }
-
-    
+        }
         
-         
-    }
-    hr {
-        color: white;
-     }
-    
+
      .derechos {
+        padding-top: 10px;
         display: flex;
         background-color: cadetblue;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        padding-left: 10px;
 
         p {
             color: white;
          }
         
      }
+    

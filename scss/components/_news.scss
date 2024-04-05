@@ -6,14 +6,30 @@
     padding: 50px;
     padding-left: 16rem;
 
+    @media (max-width:425px) {
+      grid-template-columns: repeat(1,1fr) !important;
+      padding: 30px !important;
+      width: 100% !important;
+    }
+
+    @media (min-width:1440px) and (max-width:1720px) {
+      
+      padding: 20px !important;
+      width: 100% !important;
+    }
+
     .Producto-txt {
+      
       font-size: 1.3rem;
       font-weight: 500;
       text-align: start;
       padding: 20px;
+      
   }
   .Producto-txt a {
    color: white;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
   }
   .Producto-txt a:hover {
   color: goldenrod;

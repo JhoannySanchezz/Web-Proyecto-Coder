@@ -1,49 +1,15 @@
 
-.new-main {
-    background-image: url(https://tcg.pokemon.com/assets/img/sv-expansions/temporal-forces/header/es-es/sv5-hero-3-large-up.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-.newsbasic {
-    
-    align-items: center;
-    backdrop-filter: blur(15px);
-    border-radius: 15px;
-    border: 2px ;
-    width: 40%;
-    margin-left: 28.4%;
-   
-    .txt-sub {
-        color:goldenrod;
-        text-align:center;
-        padding: 20px;
-        font-weight: 470;
-    }
-    .new-txt {
-     padding: 30px;
-     width: 100%;
-     font-weight: 400;
-     font-size: 1.3rem;
-     text-align: justify;
-     color: white;
-    }
-    
-    .viñetas {
-        padding-left: 30px;
-        text-decoration: none;
-        font-weight: 550;
-        color: goldenrod;
-    }
-}
-
-}
 
 .new-main2 {
     background-image: url(https://www.solofondos.com/wp-content/uploads/2016/01/Fondos-de-pantalla-de-Pokemon-XY-1024x561.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: auto;
+   
+   @media (max-width: 425px) {
+    height: auto;
+  }
      
 
     .newsbasic {
@@ -53,14 +19,29 @@
         border: 2px ;
         width: 40%;
         margin-left: 28.4%;
+
+        
+      @media (max-width: 425px) {
+        width: 90%;
+        margin-left: 5%;
+        padding: 10px;
+      }
        
         .txt-sub {
+            font-family: 'Poppins', sans-serif;
             color:goldenrod;
             text-align:center;
             padding: 20px;
             font-weight: 470;
+
+            
+        @media (max-width: 425px) {
+            font-size: 1.2rem;
+            padding: 10px;
+          }
         }
         .new-txt {
+            font-family: 'Poppins', sans-serif;
          padding: 30px;
          width: 100%;
          font-weight: 400;
@@ -68,11 +49,19 @@
          text-align: justify;
          color: white;
 
+         @media (max-width: 425px) {
+            font-size: 1rem;
+            padding: 10px;
+          }
+
     
         }
         .new-img {
             height: 80%;
             padding-left:35%;
+            @media (max-width: 425px) {
+                padding-left: 45px;
+              }
          }
         
         .viñetas {
@@ -81,6 +70,10 @@
             text-decoration: none;
             font-weight: 550;
             color: goldenrod;
+            
+        @media (max-width: 425px) {
+            padding-left: 10px;
+          }
         }
     }
 }
@@ -90,6 +83,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: auto;
+
+    
+   @media (max-width: 425px) {
+    height: auto;
+  }
 
 .newsbasic {
     
@@ -100,25 +99,53 @@
     width: 40%;
     margin-left: 28.4%;
 
+    
+    @media (max-width: 425px) {
+        width: 90%;
+        margin-left: 5%;
+        padding: 10px;
+      }
+  
+
     img {
         
         margin-left: 7%;
         padding: 30px;
+
+        
+        @media (max-width: 425px) {
+            margin: 0;
+            width: 100%;
+          }
     }
    
     .txt-sub {
+        font-family: 'Poppins', sans-serif;
         color:goldenrod;
         text-align:center;
         padding: 20px;
         font-weight: 470;
+
+        
+        @media (max-width: 425px) {
+            font-size: 1.2rem;
+            padding: 10px;
+          }
     }
     .new-txt {
+        font-family: 'Poppins', sans-serif;
      padding: 30px;
      width: 100%;
      font-weight: 400;
      font-size: 1.3rem;
      text-align: justify;
      color: white;
+
+     
+     @media (max-width: 425px) {
+        font-size: 1rem;
+        padding: 10px;
+      }
     }
     
     .viñetas {
@@ -126,6 +153,11 @@
         text-decoration: none;
         font-weight: 550;
         color: goldenrod;
+
+        
+        @media (max-width: 425px) {
+            padding-left: 10px;
+          }
     }
 }
 }
@@ -135,17 +167,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+   
     h2 {
         color: goldenrod;
         font-size: 3rem;
         font-weight: 800;
+
+            
+    @media screen and (max-width: 425px ) {
+      font-size: 30px !important;
+      
+   }
     }
 
     .container-flex {
       padding: 5rem;
 
+       
+    @media screen and (max-width: 425px ) {
+      padding: 0px !important;
+      
+   }
+    
+
       h3 {
+        font-family: 'Poppins', sans-serif;
         color:goldenrod;
         padding-top: 30px;
         padding-bottom: 8px;
@@ -153,9 +199,19 @@
         font-size: 2rem;
         text-align: start;
         padding-left: 1rem;
+
+        
+        @media screen and (max-width: 425px ) {
+          font-size: 28px !important;
+          text-align: justify !important;
+          padding: 18px !important;
+         
+      }
+    
         
     }
     .txt-left {
+        font-family: 'Poppins', sans-serif;
         color:goldenrod;
         padding-top: 20px;
         padding-bottom: 8px;
@@ -163,25 +219,43 @@
         font-size: 2rem;
         text-align: start;
         padding-left:51%;
+
+        @media screen and (max-width: 425px) {
+          font-size: 28px !important;
+          text-align: justify !important;
+          padding: 18px !important;
+      }
+   
     }
     
     }
 
     .flexnew-img {
        display: flex;
+        
 
         p {
-            
+            font-family: 'Poppins', sans-serif;
             padding: 20px;
             font-size: 1.4rem;
             font-weight: 470;
-            text-align: start;
+            text-align: justify;
+
+            
+            @media screen and (max-width: 425px) {
+              font-size: 18px;
+          }
         }
 
         img {
             height: 400px;
             width: 400px;
             padding: 5px;
+
+            
+            @media screen and (max-width: 425px) {
+              display: none !important;
+          }
         }
 
         

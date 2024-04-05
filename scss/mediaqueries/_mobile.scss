@@ -1,0 +1,57 @@
+@media (max-width:425px) {
+
+    .noticias-content {
+       h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 40px;
+       }
+    }
+    main {
+
+        h2{
+            font-size: 30px;
+        }
+        .sub-galeri {
+            font-size: 28px;
+            text-align: center;
+            padding: 10px;
+        }
+        .content-cards {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+         
+       .galeri-ep {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+
+         img { 
+            order: 1;
+            flex: 1;
+            width: 100%;
+        }  
+        
+        }
+    
+
+    .galeri-txt {
+        order: 2;
+        flex: 1;
+          
+        a {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+        }
+        }
+      }
+    
+    }}
+    
+
+
+
+
